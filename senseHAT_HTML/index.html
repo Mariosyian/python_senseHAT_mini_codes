@@ -1,0 +1,18 @@
+<!DOCTYPE html5>
+
+<html>
+<head>
+<title>RasPi Sensor Page</title>
+</head>
+<body>
+<h1>Sensors - Refresh automatically every 10 seconds</h1>
+<p id="temp">Temperature: 39.7</p>
+<p id="humidity">Humidity: 25.46</p>
+</body>
+<script>
+  // Refresh every 10 seconds
+  setInterval(function(){
+    window.open('http://192.168.43.170/senseHAT_HTML/index.html', "_self")
+  }, 10000);
+ </script>
+</html>
